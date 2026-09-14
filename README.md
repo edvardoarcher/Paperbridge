@@ -65,11 +65,20 @@ The Shortcut is the bridge between your photo and the Cloudflare Worker.
 
 These watch a folder on your Mac and automatically fire the Shortcut when a new file arrives.
 
+### First: Download the Files
+
+1. On this GitHub page, click the green **Code** button near the top right
+2. Click **Download ZIP**
+3. Unzip the downloaded file on your Mac
+4. Open the `automations/` folder inside the unzipped folder
+
+> **Important:** Do not try to open `.workflow` files by clicking them directly on GitHub — that will show code, not open Automator.
+
 ### Folder Trigger (runs the Shortcut automatically)
 
-1. Open the `automations/` folder in this repo
-2. Double-click **Trigger PaperBridge on Scan.workflow** — this opens it in Automator
-3. Go to **File** → **Save**
+1. **Right-click** **Trigger PaperBridge on Scan.workflow** → **Open With** → **Automator**
+   (Do not double-click — right-click is required or it will open as raw code)
+2. Go to **File** → **Save**
 4. Open **System Settings** → **Privacy & Security** → **Automation** and make sure Automator has permission to control Shortcuts
 5. Right-click the folder you want to watch in Finder → **Folder Actions Setup**
 6. Attach **Trigger PaperBridge on Scan** to that folder
@@ -78,7 +87,7 @@ These watch a folder on your Mac and automatically fire the Shortcut when a new 
 
 ### TXT to MD Converter (renames output files)
 
-1. Double-click **script for txt to md.workflow** to open it in Automator
+1. **Right-click** **script for txt to md.workflow** → **Open With** → **Automator**
 2. Go to **File** → **Save**
 3. Right-click the same watched folder in Finder → **Folder Actions Setup**
 4. Attach **script for txt to md** to the same folder
